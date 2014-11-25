@@ -5,6 +5,7 @@ class Program
 	public static void main(String[] args)
 	{
 		System.out.println(iterativeFactoria(5));
+		System.out.println(reculsiveFactoria(5));
 	}
 	
 	public static int iterativeFactoria(int n)
