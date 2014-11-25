@@ -14,4 +14,10 @@ class Program
 			result *= i;
 		return result;
 	}
+	
+	public static int reculsiveFactoria(int n)
+	{
+		if (n < 1) return 1;
+		return n * reculsiveFactoria(n - 1);
+	}
 }
