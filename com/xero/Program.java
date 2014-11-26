@@ -4,7 +4,8 @@ class Program
 {
 	public static void main(String[] args)
 	{
-		System.out.println(reculsiveFactoria(5));
+		int result = reculsiveFactoria(5);
+		System.out.println(result);
 	}
 	
 	public static int iterativeFactoria(int n)
