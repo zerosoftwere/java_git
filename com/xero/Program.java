@@ -1,11 +1,20 @@
 package com.xero;
 
+import java.text.MessageFormat;
+
 class Program
 {
 	public static void main(String[] args)
 	{
-		int result = reculsiveFactoria(5);
-		System.out.println(result);
+		int number = 10;
+		long start = System.nanoTime();
+		int factoria = reculsiveFactoria(number);
+		long end = System.nanoTime();
+		System.out.println(MessageFormat.format("The reculsive factoria of {0} is: {1} at time cost of: {2} nanoseconds", number, factoria, end - start));
+		start = System.nanoTime();
+		factoria = iterativeFactoria(number);
+		end = System.nanoTime();
+		System.out.println(MessageFormat.format("The iterative factoria of {0} is: {1} at time cost of: {2} nanoseconds", number, factoria, end - start));
 	}
 	
 	public static int iterativeFactoria(int n)
