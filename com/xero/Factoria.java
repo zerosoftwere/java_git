@@ -1,3 +1,5 @@
+package com.xero;
+
 public class Factoria
 {
 	public static int iterativeFactoria(int n)
