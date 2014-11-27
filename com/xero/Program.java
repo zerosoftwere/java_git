@@ -7,6 +7,7 @@ class Program
 	public static void main(String[] args)
 	{
 		int number = 10;
+		if (args.length > 0) number = Integer.parseInt(args[0]);
 		long start = System.nanoTime();
 		int factoria = reculsiveFactoria(number);
 		long end = System.nanoTime();
