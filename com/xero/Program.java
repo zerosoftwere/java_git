@@ -2,6 +2,11 @@ package com.xero;
 
 import java.text.MessageFormat;
 
+/**
+ * This Program demostrate iteration vs recurlsion
+ * @version 1.0 2014-11-17
+ * @author Ibrahim
+ */
 class Program
 {
 	public static void main(String[] args)
