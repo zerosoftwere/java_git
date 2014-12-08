@@ -14,7 +14,7 @@ class Program
 		int number = 10;
 		if (args.length > 0) number = Integer.parseInt(args[0]);
 		long start = System.nanoTime();
-		int factorial = reculsiveFactorial(number);
+		int factorial = recursiveFactorial(number);
 		long end = System.nanoTime();
 		System.out.println(MessageFormat.format("The recursive factorial of {0} is: {1} at time cost of: {2} nanoseconds", number, factorial, end - start));
 		start = System.nanoTime();
@@ -31,9 +31,9 @@ class Program
 		return result;
 	}
 	
-	public static int reculsiveFactorial(int n)
+	public static int recursiveFactorial(int n)
 	{
 		if (n < 1) return 1;
-		return n * reculsiveFactorial(n - 1);
+		return n * recursiveFactorial(n - 1);
 	}
 }
